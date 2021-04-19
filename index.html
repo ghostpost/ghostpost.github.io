@@ -1,16 +1,22 @@
 <body>
+    <div class="top-bar">
+        <h1>
+            forum
+        </h1>
+    </div>
+    <div class="main">
     <ol>
         <li class="row">
             <a href="/item">
             <h4 class="title">
-            
+            thread 1
             </h4>
             <div class="bottom">
                 <p class="timestamp">
-                test
+                5/5/5
                 </p>
                 <p class="comment-count">
-                test
+                4 comments
                 </p>
             </div>
             </a>
@@ -18,17 +24,55 @@
         <li class="row">
             <a href="/item">
             <h4 class="title">
-            
+                thread 2
             </h4>
             <div class="bottom">
                 <p class="timestamp">
-                test
+                5/5/6
                 </p>
                 <p class="comment-count">
-                test
+                3 comments
                 </p>
             </div>
             </a>
         </li>
     </ol>
+    </div>
+    
+    <style>
+        body {
+            color: #fff;
+            background-color: #241f30;
+            font-family: sans-serif;
+            margin: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+        h1, h4, ol {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .top-bar {
+            background-color: #3b334f;
+        }
+        .main {
+            background-color: #1e1a29;
+            padding: 10px;
+        }
+        .row {
+            padding: 5px;
+        }
+        .bottom  {
+            color: grey;
+            display: flex;
+        }
+        .timestamp {
+            padding-right: 10px;
+        }
+    </style>
+    
 </body>
