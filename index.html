@@ -1,13 +1,13 @@
 <body>
     <div class="top-bar">
-        <h1>
-            forum
+        <h1 style="font-family: sans;color: #a795de;">
+            Ghostpost
         </h1>
     </div>
     <div class="main">
     <ol>
-
     </ol>
+        
     </div>
     
     <script src="data.js"></script>
@@ -17,7 +17,7 @@
         for (let thread of threads) {
             var html = `
             <li class="row">
-            <a href="/thread.html?id=${thread.id}">
+            <a href="/thread.html?${thread.id}">
             <h4 class="title">
             ${thread.title}
             </h4>
@@ -45,10 +45,13 @@
         }
         a {
             text-decoration: none;
-            color: blueviolet;
+            color: #73ffa4;
         }
         h1, h4, ol {
-            margin: 0;
+            margin: 5px 0;
+        }
+        h1 {
+            margin: 20px;
         }
         p {
             margin: 5px 0;
@@ -57,14 +60,16 @@
             background-color: #3b334f;
         }
         .main {
+            border: 1px solid #a795de;
             background-color: #1e1a29;
             padding: 10px;
         }
         .row {
+            color: #a795de;
             padding: 5px;
         }
         .bottom  {
-            color: grey;
+            color: #584d78;
             display: flex;
         }
         .timestamp {

@@ -1,4 +1,4 @@
-var threads = [
+var defaultThreads = [
     {
         id: 1,
         title: "Thread 1",
@@ -9,12 +9,7 @@ var threads = [
             {
                 author: "Anonymous",
                 date: Date.now(),
-                content: "Message Content"
-            },
-            {
-                author: "Anonymous",
-                date: Date.now(),
-                content: "Message Content2"
+                content: "Hey"
             }
         ]
     },
@@ -28,18 +23,18 @@ var threads = [
             {
                 author: "Anonymous",
                 date: Date.now(),
-                content: "Message Content"
+                content: "yo"
             },
             {
                 author: "Anonymous",
                 date: Date.now(),
-                content: "Message Content2"
+                content: "wyd"
             }
         ]
     }
 ]
 
-var threads;
+var threads = defaultThreads
 if (localStorage && localStorage.getItem('threads')) {
     threads = JSON.parse(localStorage.getItem('threads'));
 } else {
